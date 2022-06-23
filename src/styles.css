@@ -1,0 +1,60 @@
+header {
+  border: 2px solid rgb(142, 177, 207);
+  width: 800px;
+  height: 430px;
+  margin: 70px 150px;
+}
+.capital {
+  color: rgb(97, 179, 246);
+  position: absolute;
+  top: 90px;
+  left: 165px;
+}
+.search-form {
+  margin-top: 70px;
+}
+ul {
+  list-style-type: none;
+  text-align: right;
+  margin-top: -80px;
+  padding: 0;
+}
+.city {
+  color: rgb(0, 110, 197);
+}
+li,
+.components,
+p {
+  color: grey;
+}
+.temperature {
+  position: absolute;
+  top: 260px;
+  left: 190px;
+}
+.temp {
+  color: rgb(66, 165, 245);
+  position: relative;
+  bottom: 18px;
+}
+.weekdays {
+  position: absolute;
+  top: 350px;
+  left: 190px;
+  text-align: center;
+}
+h6 {
+  color: rgb(0, 110, 197);
+  font-size: 16px;
+}
+.emoji {
+  position: relative;
+  left: 35px;
+}
+#temp {
+  text-decoration: none;
+}
+#temp:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
