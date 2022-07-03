@@ -1,19 +1,19 @@
-let now = new Date();
-let hours = now.getHours();
-let minutes = now.getMinutes();
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[now.getDay()];
-let time = document.querySelector(".date");
-time.innerHTML = `${day} ${hours}:${minutes}`;
-
+function formatDate(timestamp) {
+  let now = new Date();
+  let hours = now.getHours();
+  let minutes = now.getMinutes();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[now.getDay()];
+  return `${day} ${hours}:${minutes}`;
+}
 function showTemperature(response) {
   let temperatureElement = document.querySelector("#temp");
   let cityElement = document.querySelector(".city");
@@ -33,6 +33,7 @@ function showTemperature(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 function searchCity(city) {
   let apiKey = "e3a777fc1d55e0a271349e7b53f228c1";
