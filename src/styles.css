@@ -1,6 +1,6 @@
 header {
   border: 2px solid rgb(142, 177, 207);
-  width: 800px;
+  max-width: 800px;
   height: 430px;
   margin: 70px 150px;
 }
@@ -27,15 +27,20 @@ li,
 p {
   color: grey;
 }
-.temperature {
-  position: absolute;
-  top: 260px;
-  left: 190px;
+.weather-temperature img {
+  height: 64px;
+  width: 64px;
+  position: relative;
+  top: 30px;
 }
 .temp {
   color: rgb(66, 165, 245);
+  font-size: 50px;
+  font-weight: 450;
+}
+.components {
   position: relative;
-  bottom: 18px;
+  top: 40px;
 }
 .weekdays {
   position: absolute;
@@ -51,10 +56,14 @@ h6 {
   position: relative;
   left: 35px;
 }
-#temp {
+.units {
+  position: relative;
+  bottom: 20px;
   text-decoration: none;
+  font-size: 18px;
 }
-#temp:hover {
+#celsius-link:hover,
+#fahrenheit-link:hover {
   cursor: pointer;
   text-decoration: underline;
 }
