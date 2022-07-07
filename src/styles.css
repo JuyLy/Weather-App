@@ -43,18 +43,12 @@ p {
   top: 40px;
 }
 .weekdays {
-  position: absolute;
-  top: 350px;
-  left: 190px;
+  margin-top: 20px; 
   text-align: center;
 }
 h6 {
   color: rgb(0, 110, 197);
   font-size: 16px;
-}
-.emoji {
-  position: relative;
-  left: 35px;
 }
 .units {
   position: relative;
