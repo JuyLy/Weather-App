@@ -14,6 +14,34 @@ function formatDate(timestamp) {
   let day = days[now.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function(day) {
+  forecastHTML = forecastHTML + 
+  `
+  <div class="col-2">
+  <h6>
+ ${day}
+</h6>
+<div class="weather-forecast-temperature">
+    <p>13/8</p>	
+    </div>
+    <img
+      src="http://openweathermap.org/img/wn/50d@2x.png"
+      alt=""
+      width="48"
+    />
+</div>
+</div>
+  `
+  })
+
+forecastHTML = forecastHTML + `</div>`;
+forecastElement.innerHTML = forecastHTML;
+}
 function showTemperature(response) {
   let temperatureElement = document.querySelector("#temp");
   let cityElement = document.querySelector(".city");
@@ -76,3 +104,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 searchCity("Kyiv");
+displayForecast();
