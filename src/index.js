@@ -34,9 +34,7 @@ function displayForecast() {
       alt=""
       width="48"
     />
-</div>
-</div>
-  `
+</div>`
   })
 
 forecastHTML = forecastHTML + `</div>`;
