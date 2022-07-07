@@ -72,17 +72,20 @@ function showTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
   getForecast(response.data.coord);
 }
+
 function searchCity(city) {
   let apiKey = "e3a777fc1d55e0a271349e7b53f228c1";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
 }
+
 function inputSubmit(event) {
   event.preventDefault();
   let search = document.querySelector("#city-input");
   let city = `${search.value}`;
   searchCity(city);
 }
+
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temp");
