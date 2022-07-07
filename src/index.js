@@ -35,8 +35,9 @@ function displayForecast(response) {
       alt=""
       width="48"
     />
-</div>`
-  })
+</div>
+`;
+  });
 
 forecastHTML = forecastHTML + `</div>`;
 forecastElement.innerHTML = forecastHTML;
