@@ -46,7 +46,7 @@ function displayForecast(response) {
     <img
       src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
       alt=""
-      width="48"
+      width="56"
     />
 </div>
 `;
