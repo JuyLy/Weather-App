@@ -4,12 +4,6 @@ header {
   height: 430px;
   margin: 70px 150px;
 }
-.capital {
-  color: rgb(97, 179, 246);
-  position: absolute;
-  top: 90px;
-  left: 165px;
-}
 .search-form {
   margin-top: 70px;
 }
